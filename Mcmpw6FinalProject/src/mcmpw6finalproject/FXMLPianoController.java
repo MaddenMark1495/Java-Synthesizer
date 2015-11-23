@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -42,9 +43,11 @@ public class FXMLPianoController extends Switchable implements Initializable {
     private Stage stage;
     
     @FXML
-    private TextField noteTextField;
+   private TextField noteTextField;
     
-    private Piano piano;
+   private Piano piano;
+   Random rm = new Random();
+
     
     
     @Override
@@ -53,10 +56,29 @@ public class FXMLPianoController extends Switchable implements Initializable {
         piano = new Piano();
         piano.setInstrument();
         piano.setInstrument();
-        piano.setChannel(0);
         piano.setDuration(200);
         piano.setVolume(80);
     }    
+    
+    @FXML 
+    private void handleinstrumentdrums(ActionEvent event){
+        piano.setChannel(9);
+    }
+    
+     @FXML 
+    private void handleinstrumentpiano(ActionEvent event){
+        piano.setChannel(0);
+    }
+    
+    
+     @FXML 
+    private void handleinstrumentrandom(ActionEvent event){
+        
+        piano.setChannel(rm.nextInt(10));
+        
+        System.out.print(rm.nextInt(10));
+        
+    }
     
     
     

@@ -41,21 +41,8 @@ public class FXMLMainScreenController extends Switchable implements Initializabl
     private void handlePianoButtonAction(ActionEvent event){
         //System.out.println("HEre");
         switchTo("FXMLPiano");
-       
     }
-  
-    @FXML
-    private void handleDrumsButtonAction(ActionEvent event){
-        System.out.println("HEre2");
-        switchTo("FXMLDrums");
-    }
-    
-    @FXML
-    private void handleMysteryButtonAction(ActionEvent event){
-        //System.out.println("HEre3");
-        switchTo("FXMLMystery");
-    }
-    
+        
     @FXML
     private void handleAbout(ActionEvent event){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

@@ -16,71 +16,12 @@
    <children>
       <AnchorPane onMouseClicked="#handlePianoButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #708090;">
          <children>
-            <MenuBar prefHeight="29.0" prefWidth="606.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" StackPane.alignment="TOP_LEFT">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="160.0" layoutX="35.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="129.0">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop color="BLACK" />
-                        <Stop color="WHITE" offset="1.0" />
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="160.0" layoutX="236.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="129.0">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop color="BLACK" />
-                        <Stop color="WHITE" offset="1.0" />
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="160.0" layoutX="432.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="129.0">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop color="BLACK" />
-                        <Stop color="WHITE" offset="1.0" />
-                     </stops>
-                  </LinearGradient>
-               </fill>
-            </Rectangle>
-            <Text fill="WHITE" layoutX="113.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select An Instrument" wrappingWidth="376.0">
+            <Text fill="WHITE" layoutX="42.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Synthesiser" wrappingWidth="517.0">
                <font>
                   <Font name="Helvetica Neue" size="40.0" />
                </font>
             </Text>
-            <Button fx:id="Pianobutton" layoutX="71.0" layoutY="333.0" mnemonicParsing="false" onAction="#handlePianoButtonAction" text="Piano" />
-            <Button layoutX="272.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleDrumsButtonAction" text="Drums" />
-            <Button layoutX="468.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleMysteryButtonAction" text="Mystery" />
-            <ImageView fitHeight="102.0" fitWidth="98.0" layoutX="252.0" layoutY="221.0">
-               <image>
-                  <Image url="@../../../../../../../../Desktop/drum-kit-md.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="45.0" layoutY="221.0">
-               <image>
-                  <Image url="@../../../../../../../../Desktop/1195445703562514090TheresaKnott_piano.svg.med.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="116.0" fitWidth="65.0" layoutX="468.0" layoutY="214.0">
-               <image>
-                  <Image url="@../../../../../../../../Desktop/pioAgkojT.png" />
-               </image>
-            </ImageView>
+            <Button fx:id="Pianobutton" layoutX="234.0" layoutY="200.0" mnemonicParsing="false" onAction="#handlePianoButtonAction" prefHeight="76.0" prefWidth="133.0" text="Start" />
          </children>
       </AnchorPane>
    </children>
