@@ -74,7 +74,7 @@ public class FXMLPianoController extends Switchable implements Initializable {
      @FXML 
     private void handleinstrumentrandom(ActionEvent event){
         
-        piano.setChannel(rm.nextInt(10));
+        piano.setChannel(rm.nextInt(9));
         
         System.out.print(rm.nextInt(10));
         

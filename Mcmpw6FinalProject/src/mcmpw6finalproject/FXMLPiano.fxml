@@ -11,7 +11,7 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mcmpw6finalproject.FXMLPianoController">
    <children>
-      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #708090;">
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1891.0" style="-fx-background-color: #708090;">
          <children>
             <MenuBar fx:id="menubar" layoutX="-2.0" layoutY="1.0" prefHeight="27.0" prefWidth="675.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="1.0">
               <menus>
@@ -58,6 +58,8 @@
             <Label layoutX="184.0" layoutY="320.0" text="E" />
             <TextField fx:id="noteTextField" layoutX="23.0" layoutY="39.0" prefHeight="27.0" prefWidth="119.0" />
             <Button layoutX="23.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleSave" text="Save" />
+            <Rectangle fx:id="highc1" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="200.0" layoutX="537.0" layoutY="151.0" onMouseClicked="#handlePlayC" stroke="BLACK" strokeType="INSIDE" width="64.0" />
+            <Rectangle fx:id="highc11" arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="200.0" layoutX="602.0" layoutY="150.0" onMouseClicked="#handlePlayC" stroke="BLACK" strokeType="INSIDE" width="66.0" />
          </children>
       </AnchorPane>
    </children>
