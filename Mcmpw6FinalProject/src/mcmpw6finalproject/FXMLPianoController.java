@@ -223,7 +223,7 @@ public class FXMLPianoController extends Switchable implements Initializable {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About");
         alert.setHeaderText("Final Project");
-        alert.setContentText("This application was developed by Mark Madden for CS3330 at the University of Missouri");
+        alert.setContentText("This application was developed by Mark Madden");
         TextArea textArea = new TextArea("This project has three different instruments. Piano, Drums and a mystery instrument");
         textArea.setEditable(false);
         textArea.setWrapText(true);
